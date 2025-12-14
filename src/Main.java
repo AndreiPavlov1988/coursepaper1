@@ -27,7 +27,6 @@ class Employee {
         this.salary = salary;
     }
 
-    @Override
     public boolean equals(Object obj) {
         if (obj instanceof Employee) {
             return this.salary == ((Employee)obj).salary;
@@ -35,7 +34,6 @@ class Employee {
         return false;
     }
 
-    @Override
     public String toString() {
         return String.format("ID:%d %s, отдел:%d, зарплата:%.2f",
                 id, name, department, salary);
