@@ -175,12 +175,7 @@ public class Main {
                 "Смирнов", "Федоров", "Николаева", "Павлов",
                 "Алексеев", "Морозов", "Лишний"}; // 11-й не добавится
 
-        System.out.println("Добавление:");
-        for (int i = 0; i < names.length; i++) {
-            int dept = (i % 5) + 1;
-            double salary = 50 + Math.random() * 400;
-            boolean added = book.add(new Employee(names[i], dept, salary));
-            System.out.println(names[i] + ": " + (added ? "добавлен" : "не добавлен"));
+
         }
 
 
